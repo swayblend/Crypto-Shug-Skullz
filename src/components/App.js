@@ -175,7 +175,7 @@ function App() {
 					<Row className='header my-3 p-3 mb-0 pb-0'>
 						<Col xs={12} md={12} lg={8} xxl={8}>
 							<h1>Crypto Shug Skullz</h1>
-							<p className='sub-header'>Availble on 05 / 07 / 22</p>
+							<p className='sub-header'>Available on 05 / 07 / 22</p>
 						</Col>
 						<Col className='flex social-icons'>
 							<a
@@ -236,11 +236,11 @@ function App() {
 										<li>Each web3 address can mint up to 10 NFT's on the Rinkeby testnet.</li>
 										<li>These Crypto Shug Skull images were created using an art generator</li>
 									        to help facilitate the randomization of attributes.  	
-										<li>Art inspired by Hispanic "Sugar Skulls".</li>
-										<li>Viewable on Opensea shortly after minting.</li>
+										<li>Art is inspired by Day of the Dead Sugar Skulls.</li>
+										<li>Viewable on OpenSea shortly after minting.</li>
 										<li>Requires Web3 wallet and Rinkeby test eth for gas.</li> 
 										(for test eth, go to the Chainlink Faucets link at the bottom of this page)
-					  					<li>See smart Contract address/link for verification on Etherscan.</li>
+					  					<li>See the link to the smart contract address for verification on Etherscan.</li>
 										(at the bottom of this page)
 									</ul>
 
