@@ -84,8 +84,8 @@ Create a .env file in the root directory of your project, and fill in the follow
 - For Polygon Mainnet: `truffle migrate --reset --network matic`
 
 ### 3. Verify your contracts
-- For Rinkeby testnet: `truffle run verify OpenPunks --network rinkeby`
-- For Polygon Mainnet: `truffle run verify OpenPunks --network matic`
+- For Rinkeby testnet: `truffle run verify CryptoShugSkullz --network rinkeby`
+- For Polygon Mainnet: `truffle run verify CryptoShugSkullz --network matic`
 
 ## Preparing for Frontend Deployment
 ### 1. Create or Login to your GitHub account
