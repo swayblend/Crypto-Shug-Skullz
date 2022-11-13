@@ -1,5 +1,5 @@
 {
-    "PROJECT_NAME": "crypto-shug-skullz",
+    "PROJECT_NAME": "crypto-shug-skullz-v2",
     "NETWORKS": {
         "1": {
             "name": "Ethereum Mainnet",
@@ -11,6 +11,12 @@
             "name": "Rinkeby Testnet",
             "isTestnet": true,
             "explorerURL": "https://rinkeby.etherscan.io",
+            "openseaURL": "https://testnets.opensea.io"
+        },
+        "5": {
+            "name": "Goerli Testnet",
+            "isTestnet": true,
+            "explorerURL": "https://goerli.etherscan.io",
             "openseaURL": "https://testnets.opensea.io"
         },
         "80001": {

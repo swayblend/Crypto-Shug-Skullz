@@ -6,9 +6,9 @@
     --clr-secondary: #1E1E1E;
     --clr-text-light: #F2ECFF;
     --clr-text-dark: #030303;
-    --clr-button-bg-1: #3586C6;
-    --clr-button-bg-2: #44E6FF;
-    --clr-button-bg-3: #FF7F50;
+    --clr-button-bg-1: #b8860b;
+    --clr-button-bg-2: #e2be6d;
+    --clr-button-bg-3: #fcd888;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 
 body {
     background: var(--clr-primary);
-    background: linear-gradient(var(--clr-primary), var(--clr-secondary));
+    background: var(--clr-primary);
     color: var(--clr-text-light);
 
     min-height: 100vh;

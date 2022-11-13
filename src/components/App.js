@@ -30,8 +30,8 @@ function App() {
 	const [ownerOf, setOwnerOf] = useState([])
 
 	const [explorerURL, setExplorerURL] = useState('https://etherscan.io')
-	const [openseaURL, setOpenseaURL] = useState('https://opensea.io')
-	const [chainlinkURL, setChainlinkURL] = useState('https://faucets.chain.link')
+	const [openseaURL, setOpenseaURL] = useState('https://testnets.opensea.io')
+	const [goerlifaucetURL, setGoerlifaucetURL] = useState('https://goerlifaucet.com')
 
 	const [isMinting, setIsMinting] = useState(false)
 	const [isError, setIsError] = useState(false)
@@ -174,8 +174,8 @@ function App() {
 
 					<Row className='header my-3 p-3 mb-0 pb-0'>
 						<Col xs={12} md={12} lg={8} xxl={8}>
-							<h1>Crypto Shug Skullz</h1>
-							<p className='sub-header'>Available on 05 / 07 / 22</p>
+							<span style={{color: '#b8860b'}}><h1>Crypto Shug Skullz</h1></span>
+							<p className='sub-header'><span style={{color: '#87ceeb'}}>Available on 05 / 07 / 22</span></p>
 						</Col>
 						<Col className='flex social-icons'>
 							<a
@@ -185,7 +185,7 @@ function App() {
 								<img src={twitter} alt="Twitter" />
 							</a>
 							<a
-								href="https://www.instagram.com/swayblend/"                                                                                             
+								href="https://www.instagram.com/swayblend.ai/"                                                                                             
 								target='_blank'
 								className='circle flex button'>
 								<img src={instagram} alt="Instagram" />
@@ -210,7 +210,7 @@ function App() {
 						<Col md={5} lg={4} xl={5} xxl={4}>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
 							<p className='text'>
-								<h3>Would you like your own unique Crypto Shug Skull Avatar?</h3>
+								<h3><span style={{color: '#87ceeb'}}>Would you like your own unique Crypto Shug Skull Avatar?</span></h3>
 							</p>
 							<a href="#about" className='button mx-3'>Learn More!</a>
 						</Col>
@@ -220,7 +220,7 @@ function App() {
 				<section id='about' className='about'>
 
 					<Row className='flex m-3'>
-						<h2 className='text-center p-3'>About the Collection</h2>
+						<h2 className='text-center p-3'><span style={{color: '#b8860b'}}>About the Collection</span></h2>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img src={showcase} alt="Multiple Crypto Shug Skullz" className='showcase' />
 						</Col>
@@ -229,20 +229,20 @@ function App() {
 								<p>{message}</p>
 							) : (
 								<div>
-									<h3>Mint your NFT Avatar in</h3>
+									<h3><span style={{color: '#87ceeb'}}>Mint your NFT Avatar in</span></h3>
 									{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown' />}
-									<ul>
+									<span style={{color: '#87ceeb'}}><ul>
 										<li>1,000 uniquely generated Crypto Shug Skull images now in supply!</li>
-										<li>Each web3 address can mint up to 10 NFT's on the Rinkeby testnet.</li>
-										<li>These Crypto Shug Skull images were created using an art generator</li>
-									        to help facilitate the randomization of attributes.  	
+										<li>Each web3 address can mint up to 10 NFT's on the Goerli testnet.</li>
+										<li>Images were created using an art generator</li>
+									        to help facilitate the randomization of attributes.	
 										<li>Art is inspired by Day of the Dead Sugar Skulls.</li>
 										<li>Viewable on OpenSea shortly after minting.</li>
-										<li>Requires Web3 wallet and Rinkeby test eth for gas.</li> 
-										(for test eth, go to the Chainlink Faucets link at the bottom of this page)
+										<li>Requires Web3 wallet and Goerli test eth for gas on the Goerli network.</li> 
+										(for test eth, go to the Goerli faucet link at the bottom of this page)
 					  					<li>See the link to the smart contract address for verification on Etherscan.</li>
-										(at the bottom of this page)
-									</ul>
+										(at the bottom of this page if logged in)
+									</ul></span>
 
 									{isMinting ? (
 										<Spinner animation="border" className='p-3 m-2' />
@@ -269,7 +269,7 @@ function App() {
 				<section id='about' className='about'>
 
 					<Row className='flex m-3'>
-						<h2 className='text-center p-3'>About the Artist</h2>
+						<h2 className='text-center p-3'><span style={{color: '#b8860b'}}>About the Artist</span></h2>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
 							<img src={self} alt="Selfie" className='showcase' />
 						</Col>
@@ -278,12 +278,12 @@ function App() {
 								<p>{message}</p>
 							) : (
 								<div>
-									<h3>Andrew Lucero...</h3>
-									<ul>
+									<h3><span style={{color: '#87ceeb'}}>Andrew Lucero...</span></h3>
+									<ul><span style={{color: '#87ceeb'}}>
 										<li>Is a graphic designer and blockchain developer.</li>
 										<li>Enjoys using his illustration skills in the web3 space.</li>
 										<li>Has indepth knowledge of creating etherium NFT projects from start to finish.</li>
-									</ul>
+									</span></ul>
 									    <a href= "mailto:andrewlucero411@gmail.com" className='button'>Get In Touch</a>
 								</div>
 							)}
@@ -292,12 +292,12 @@ function App() {
 
 					<Row style={{ marginTop: "100px" }}>
 						<Col>
-							{chainlinkURL &&
+							{goerlifaucetURL &&
 								<a
-									href={`${chainlinkURL}`}
+									href={`${goerlifaucetURL}`}
 									target='_blank'
 									className='text-center'>
-									{'https://faucets.chain.link'}
+									{'https://goerlifaucet.com'}
 								</a>
 							}
 							

@@ -19,6 +19,16 @@ module.exports = {
 			network_id: 4
 		},
 
+		goerli: {
+			provider: function () {
+				return new HDWalletProvider(
+					[process.env.DEPLOYER_PRIVATE_KEY],
+					`wss://goerli.infura.io/ws/v3/${process.env.INFURA_API_KEY}` // URL to Ethereum Node
+				)
+			},
+			network_id: 5
+		},
+
 		matic: {
 			provider: function () {
 				return new HDWalletProvider(
